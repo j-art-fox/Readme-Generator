@@ -5,25 +5,20 @@ inquirer
     .prompt([
         {
             type: 'input',
-            message: 'What is your name?',
-            name: 'username',
-        },
+            message: `What is your project's name?`,
+            name: 'projectname',
+        }
         {
-            type: 'list',
-            message: 'What languages do you know?',
-            name: 'languages',
-            choices: ['ASL', 'Spanish', 'French']
-        },
-        {
-            type: 'checkbox',
-            message: 'What is your preferred method of communication?',
-            name: 'method',
-            choices: [{name:'phone', value: '📱'}, 'email']
-        },
+            type: 'input',
+            message: 'Please write your name as you would like it to display in the Readme.',
+            name: 'username'
+        }
     ])
+    // In my .then((response)) can I specify a directory to save it so I don't  save over my readme for the project?
+    // How can I modify the output to reflect a markdown's formatting?
+    // what does join() do?
     .then((response) => {
-        fs.writeFileSync(`${response.username}userinfo.txt`, JSON.stringify(response));
-        const data = JSON.parse(fs.readFileSync(`${response.username}userinfo.txt`, "utf-8"));
-        console.log(data);
+        fs.writeFileSync(`${response.projectname}README.md`, response);
+           
     }
     );
