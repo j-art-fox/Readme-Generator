@@ -9,12 +9,7 @@ const questions = [
     {
         type: 'input',
         message: `What is the title of your project?`,
-        name: 'projecttitle',
-    },
-    {
-        type: 'input',
-        message: 'Please write your name as you would like it to display in the Readme.',
-        name: 'username',
+        name: 'title',
     },
     {
         type: 'input',
@@ -38,8 +33,9 @@ const questions = [
     },
     {
         type: 'list',
-        message: 'Please write your deployed application URL.',
+        message: 'Please select the correct license for your application.',
         name: 'license',
+        choices: ['Apache2', 'Boost','BSD 3', 'BSD 2', 'Creative Commons','MIT','none']
     },
     {
         type: 'input',
@@ -50,6 +46,16 @@ const questions = [
         type: 'input',
         message: 'Write tests for your application. Then provide examples on how to run them here.',
         name: 'tests',
+    },
+    {
+        type: 'input',
+        message: 'Please write an email address where people can inquire about your application.',
+        name: 'email',
+    },
+    {
+        type: 'input',
+        message: 'Please write your GitHub profile where people may contact you if they have questions.',
+        name: 'github',
     },
 ];
 
