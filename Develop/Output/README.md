@@ -1,8 +1,7 @@
-# check1 
+# p 
 
 ## Description
-undefined
-check 2
+p
 
 ## Table of Contents 
 - [Installation](#installation)
@@ -14,25 +13,26 @@ check 2
 
 ## Installation
 
-check 4
+p
 
 ## Usage
 
-check 5
+
 
 ## License
 
-undefined
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [Read More] (https://opensource.org/licenses/Apache-2.0);
 
 ## Contributing
 
-check 6
+
 
 ## Tests
 
-check 7
+
 
 ## Questions
-check 9
-check 8
+For questions and concerns, please contact me on either Github or via email using the information below.
+GitHub: 
+Email: 
 

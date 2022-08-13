@@ -35,7 +35,7 @@ const questions = [
         type: 'list',
         message: 'Please select the correct license for your application.',
         name: 'license',
-        choices: ['Apache2', 'Boost','BSD 3', 'BSD 2', 'Creative Commons','MIT','none']
+        choices: ['Apache2', 'Boost', 'BSD 3', 'BSD 2', 'Creative Commons', 'MIT', 'none']
     },
     {
         type: 'input',
@@ -66,6 +66,8 @@ function writeToFile(fileName, data) { }
 function init() {
     inquirer.prompt(questions).then((data) => {
         fs.writeFileSync(`./Output/README.md`, generateMarkdown(data));
+        const text = "Thank you for using the readme generator."
+        console.log(`\x1b[36m${text}\x1b[0m`);
     })
 }
 
